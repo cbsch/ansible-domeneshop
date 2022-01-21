@@ -6,6 +6,18 @@ The module requires the [Domeneshop python module](https://pypi.org/project/dome
 
 The version tested is `0.4.2`
 
+## Installation
+
+Install from galaxy
+```bash
+ansible-galaxy collection install cbsch.domeneshop
+```
+
+You might also have to install the domeneshop Python module
+```bash
+python3 -m pip install domeneshop
+```
+
 ## Example usage
 
 Most basic usage.
