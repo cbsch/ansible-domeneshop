@@ -1,10 +1,8 @@
 #!/usr/bin/python3
 from ansible.module_utils.basic import AnsibleModule
 from ansible.module_utils.json_utils import json
-from ansible.utils.display import Display
 from domeneshop import Client
 import os
-display = Display()
 
 import yaml
 
