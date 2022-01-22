@@ -81,12 +81,15 @@ Update multiple records on a single domain name, and caching records in /tmp to 
 
 Quick guide to running the collection using docker. Replace values in the playbook with your own.
 
+The example commands will also work on a normal Ubuntu machine.
+
 ```bash
 docker exec -it --rm ubuntu /bin/bash
 # Inside the container
 apt update
 apt install -y python3 python3-pip
 python3 -m pip install ansible
+python3 -m pip install domeneshop
 ansible-galaxy collection install cbsch.domeneshop
 cd ~
 mkdir ansible
