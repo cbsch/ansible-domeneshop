@@ -124,7 +124,8 @@ class Domain:
         return True
 
     def get_domain_data(self):
-        domain = self.client.get_domains()[0]
+        domains = self.client.get_domains()
+        domain = domains[next(i for i, e in enumerate(domains) if e["domain"] == self.domain)]
         records = self.client.get_records(domain["id"])
 
         return dict(
