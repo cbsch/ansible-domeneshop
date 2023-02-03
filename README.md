@@ -84,7 +84,7 @@ Quick guide to running the collection using docker. Replace values in the playbo
 The example commands will also work on a normal Ubuntu machine.
 
 ```bash
-docker exec -it --rm ubuntu /bin/bash
+docker run -it --rm ubuntu /bin/bash
 # Inside the container
 apt update
 apt install -y python3 python3-pip
